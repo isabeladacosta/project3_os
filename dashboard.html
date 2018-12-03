@@ -4,64 +4,203 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
     <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <div class="container-fluid">
-      <div class="row">
-       <!-- Menu Bar -->   
-       <nav class="navbar shadow bg-white">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#"><img src="https://content-static.upwork.com/uploads/2014/10/01073427/profilephoto1.jpg" class="rounded-circle" alt="User" width="60" height="60"> </a>
-              </li>
-              <center>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><img src="https://image.flaticon.com/icons/svg/13/13512.svg" alt="New Page" width="20" height="20"></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><img src="https://image.flaticon.com/icons/svg/13/13512.svg" alt="New Page" width="20" height="20"></a>
-              </li>
-            </center>
-            </ul>
-          
-          </nav>
-
-     <div class="col-8 bg-light">
+    <div class="row">
     
-            <div class="row">
-      <h6>Dashboard</h6>
-      <form class="form-inline">
-            <i class="fa fa-search" aria-hidden="true"></i>
-            <input type="text" class="form-control shadow" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
+        <div class="col-lg-1 bg-white shadow">
+          
+          <ul>
+                <a href="#"><img src="https://content-static.upwork.com/uploads/2014/10/01073427/profilephoto1.jpg" class="rounded-circle" alt="User" width="60" height="60"><i class="fas fa-circle" style="color:blue;font-size:12px;margin-left:-15px;margin-bottom:-21px;"></i></a>
+                <li><a href="#"><img src="https://image.flaticon.com/icons/svg/13/13512.svg" alt="New Page" width="20" height="20"></a></li>
+                <li><a href="#"><img src="https://image.flaticon.com/icons/svg/13/13512.svg" alt="New Page" width="20" height="20"></a></li>
+           
+          </ul> 
+      </div>
 
-          </form>
+        
+      <div class="col-lg-8 bg-light">
+                <div class="row">
+                    <div class="col-md-2">
+                      <center><h5>Dashboard</h5></center>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text shadow"><i class="fa fa-search" aria-hidden="true"></i></div>
+                            </div>
+                            <input type="text" class="form-control shadow" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon">
+                          </div>
+                    </div>
+                    <div class="col-md-3">
+                       
+                      <center>
+                      <button type="button" class="btn btn-add-new">
+                        + Add New Document
+                      </button></center>
+                    </div>
+                    <div class="col-md-1">
+                      <a href=""><i class="fas fa-ellipsis-v" style="font-size:20px;"></i></a>
+                    </div>
+                  
+                  </div>
+                  <div class="row row-buttons">
+                    <div class="col-md-3">
+                      
+                    <center>
+                      <button type="button" class="btn btn-success shadow">
+                       <strong>All</strong>
+                      </button>
+                    </center>
+                    </div>
+            
+                    <div class="col-md-3">
+                       
+                     <center>
+                      <button type="button" class="btn btn-success shadow">
+                        <strong>Verified</strong>
+                      </button>
+                    </div>
+                  </center>
+                    <div class="col-md-3">
+                    <center>
+                      <button type="button" class="btn btn-success shadow">
+                        <strong>in Progress</strong>
+                      </button>
+                    </center>
+                    </div>
+                    <div class="col-md-3">
+                    <center>
+                      <button type="button" class="btn btn-success shadow">
+                        <strong>Denied</strong>
+                      </button>
+                    </center>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="card shadow">
+                          <img class="card-img-top" src="https://images.unsplash.com/photo-1454496406107-dc34337da8d6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1eba6d2e11ba9969b93d137aa42ae851&auto=format&fit=crop&w=863&q=80" alt="Card image cap" height="200px" width="160px">
+                          <h5 class="card-header">
+                            <div class="row">
+                            <strong>Passport</strong><h6 class="ver-status">verified</h6>
+                            </div>
+                            <center><div class="bar"></div></center><br></h5>
+                            
+                       
+                      </div>
+                    </div>
+            
+                    <div class="col-md-6">
+                      <div class="card shadow">
+                        <img class="card-img-top" src="https://images.unsplash.com/photo-1512380828180-ef9bd6cb3c2f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9e7d54c092bed92b2e2f100597181cd9&auto=format&fit=crop&w=751&q=80" alt="Card image cap" height="200px" width="160px">
+                      <h5 class="card-header">
+                        <div class="row">
+                        <strong>Driver License GER</strong><h6 class="ver-status">verified</h6>
+                        </div>
+                        <center><div class="bar"></div></center><br></h5>
+                    </div>
+                    </div>
+            
+                  </div>
+            
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="card shadow">
+                          <img class="card-img-top" src="https://images.unsplash.com/photo-1519291884310-9472f14f0ff0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=97aba54c216c8a1713bb49b30ba93286&auto=format&fit=crop&w=692&q=80" alt="Card image cap" height="200px" width="160px">
+                          <h5 class="card-header">
+                            <div class="row">
+                            <strong>Journalist ID</strong><h6 class="ver-status">verified</h6>
+                            </div>
+                            <center><div class="bar"></div></center><br></h5>
+                            
+                       
+                      </div>
+                    </div>
+            
+                    <div class="col-md-6">
+                      <div class="card shadow">
+                        <img class="card-img-top" src="https://images.unsplash.com/photo-1511629091441-ee46146481b6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d22f0ea76aa44e822fa81f58c063a70d&auto=format&fit=crop&w=750&q=80" alt="Card image cap" height="200px" width="160px">
+                      <h5 class="card-header">
+                        <div class="row">
+                        <strong>Math PHD</strong><h6 class="ver-status">verified</h6>
+                        </div>
+                        <center><div class="bar"></div></center><br></h5>
+                    </div>
+                    </div>
+            
+                  </div>
+            
+            
+            </div>
+           
+
+            <div class="col-lg-3 bg-light notifications-col">
+                <div class="notifications-bar shadow">
+         
+                    <div class="notifications-header shadow">Notifications</div>
+                    <div class="bar-notification"></div>
+                    <div class="notification-content">
+                    <div class="row">
+                       <div class="col-2"><i class="fas fa-circle" style="color:blue;font-size:12px;"></i></div>
+                       <div class="col-7"><strong>Driver License</strong></div>
+                       <div class="col-3"><i class="fas fa-chevron-down" style="margin-left:20px;"></i></div>
+                    </div>
+                    <div class="row">
+                       <div class="col-2"></div>
+                       <div class="col-10"><p style="color:rgb(102, 102, 102);font-size:12px;padding-top:5px;">Your documents were received</p></div>
+                    </div>
+                    <div class="bar-notification"></div>
+                    <div class="row">
+                       <div class="col-2"><i class="fas fa-circle" style="color:blue;font-size:12px;"></i></div>
+                       <div class="col-7"><strong>Journalist ID</strong></div>
+                       <div class="col-3"><i class="fas fa-chevron-down" style="margin-left:20px;"></i></div>
+                    </div>
+                    <div class="row">
+                       <div class="col-2"></div>
+                       <div class="col-10"><p style="color:rgb(102, 102, 102);font-size:12px;padding-top:5px;">The verification was denied</p></div>
+                    </div>
+                    <div class="bar-notification"></div>
+                    <div class="row">
+                       <div class="col-2"></div>
+                       <div class="col-7"><strong>Passport</strong></div>
+                       <div class="col-3"><i class="fas fa-chevron-up" style="margin-left:20px;"></i></div>
+                    </div>
+                    <div class="row">
+                       <div class="col-2"></div>
+                       <div class="col-10"><p style="color:rgb(102, 102, 102);font-size:12px;padding-top:5px;">Your passport was verified</p></div>
+                    </div>
+                    <div class="row">
+                       <div class="col-2"></div>
+                       <div class="col-10"><p style="color:gray;font-size:12px;">The documents for your passport were reviwed and accepted. You can now sign in with FastID at the following services. Here are some other services that will support FastID with your passport.</p></div>
+                    </div>
+                  </div>
+                 </div>
+              </div>
+
+          </div>
+
+          
+
         </div>
 
-        <div class="row">
 
-        <div class="card shadow">
-                <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                </div></div>
+       
 
+      </div>
 
+     
 
-     </div>
-
-    </div>
-
-     <div class="col-3 bg-light">
-       <p>Sed ut perspiciatis...</p>
-     </div>
-
-    </div>
     </div>
   
 

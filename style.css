@@ -42,6 +42,10 @@ li a.active {
     padding: 20px;
 }
 
+.search-row {
+    align-items: center;
+}
+
 .btn-success {
     border: 0px;
     color: black;
@@ -49,6 +53,7 @@ li a.active {
     padding: 10px;
     width: 100%;
     border-radius: 10px;
+    margin: 5px;
 }
 
 .btn-success:hover {
@@ -64,6 +69,7 @@ li a.active {
       color: white;
       border: 0px;
       border-radius: 50px;
+      margin: 5px;
 }
 
 .input-group-text {

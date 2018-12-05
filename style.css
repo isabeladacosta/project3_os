@@ -6,13 +6,23 @@ body {
     z-index: 100;
 }
 
-ul {
+.sidebar ul {
     list-style-type: none;
-    margin: 0;
-    padding: 10px;
+    padding: 15px 0; 
     position: fixed;
     height: 100%;
     overflow: auto;
+    align-self: center;
+}
+
+.middleContainer{
+    padding: 36px;
+}
+
+.sidebar{
+    max-width: 107px;
+    display: flex;
+    flex-direction: column;
 }
 
 li a {
@@ -88,6 +98,50 @@ li a.active {
     border-radius: 50px;
     background-color: white;
 }
+
+.cardBorderBottom{
+    padding: 21px;
+    background-color:#ffffff;
+    height: 94px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 10px solid #FF6565;
+    border-radius: 10px;
+}
+
+.cardBorderBottom img{
+   height: 45px;
+   width: 37px;
+   margin-right: 28px;
+   align-self: center;
+}
+
+.cardBorderBottom .header{
+    display: flex;
+    flex-direction: column;
+}
+
+.cardBorderBottom .header h5{
+    height: 36px;
+    font-size: 22px;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.cardBorderBottom .header h5 small{
+    margin-left: 20px;
+    font-size: 10px;
+    align-self: flex-start;
+}
+
+.cardBorderBottom .header p{
+    margin-top: 16px;
+
+}
+
+
 
 .card-header {
     border-radius: 15px;

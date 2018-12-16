@@ -1,0 +1,401 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/*  SIDEBAR STYLE  */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    width: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 800;
+    background: #fff;
+    color: rgb(87, 87, 87);
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -100px;
+}
+
+.sidebar-content {
+    margin:18px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 10px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    padding: 10px 12px;
+    text-decoration: none;
+}
+
+.modal-body {  
+   color: white;
+   min-height: 90vh;
+   padding:0px;
+}
+
+.col1-modal {
+    background-color: white;
+    height: 90vh;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.flex-container-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.col2-modal {
+    background-image: linear-gradient(213.99deg, #314C73 0%, #1A1D21 114.17%);
+    padding: 30px;
+    position: relative;
+}
+
+.form-modal-1 {
+    margin-top: 40%;
+    margin-bottom: 50%;
+}
+
+#Step2 {
+    margin-top: 0%;
+    margin-bottom: 10%;
+}
+
+.btn-secondary {
+    position: absolute;
+    width: 100px;
+    left:0px;
+    margin: 30px;
+ }
+
+.btn-primary {
+   position: absolute;
+   width: 100px;
+   right:0px;
+   margin: 30px;
+}
+
+.progressform {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CONTENT STYLE */
+
+#content {
+    width: calc(100% - 100px);
+    padding: 10px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#content.active {
+    width: 100%;
+}
+
+
+.search-row {
+    align-items: center;
+}
+
+.btn-success {
+    border: 0px;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.btn-success:hover {
+    background-color: #3E6AF8;  
+}
+
+.btn-success:active {
+    border-left: 15px solid #3E6AF8;
+}
+
+.btn-add-new {
+      background-image: linear-gradient(to right, #3E6AF8 , rgb(160, 175, 252));
+      color: white;
+      border: 0px;
+      border-radius: 50px;
+      margin: 5px;
+}
+
+.btn1 {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.input-group-text {
+
+    background-color: white;
+    border: 0px;
+    border-radius: 50px;
+    width: 50px;
+   
+
+}
+
+.ver-status {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: white;
+}
+
+.form-control {
+    border: 0px;
+    border-radius: 5px;
+}
+
+
+.row-buttons {
+    margin: 40px;
+}
+
+.options-bar {
+    position: fixed;
+    z-index: 999;
+    background-color: #f8f9fa;
+    padding-left: 50px;
+    padding-right: 80px;
+}
+
+.cards-content {
+    margin-top:200px;
+}
+
+.card {
+    margin: 20px;
+    border: 0px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.card-horizontal {
+    background-color: white;
+    border-radius: 10px;
+    border-bottom: 8px solid green;
+}
+
+.card-header {
+    border-radius: 15px;
+    background-color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 3px;
+    border-bottom: 8px solid #3E6AF8;
+}
+
+.card-img-top {
+    border-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    object-fit: cover;
+}
+
+.bar {
+    border: 5px solid #3E6AF8;
+    background-color: #3E6AF8;
+    width: 100px;
+    height: 20px;
+    right: 0px;
+    bottom: 5px;
+    position: absolute;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.notifications-col {
+    margin: 10px;
+    padding: 50px;
+    position: fixed;
+    right:0px;
+    height: 100vh;
+}
+
+.notifications-bar {
+    background-color: white;
+    height: 90vh;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    position: fixed;
+}
+
+.notifications-header {
+    background-image: linear-gradient(to right, #3E6AF8 , rgb(160, 175, 252));
+    color: white;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.notification-content {
+    margin-top:30px; 
+}
+
+.bar-notification {
+    border: 0.5px solid rgba(150, 150, 151, 0.226);
+    margin-top:10px;
+    width: 95%;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.card-uses-box {
+    border: 5px solid lightgrey;
+    border-radius: 50px;
+    background-color: lightgrey;
+    width: 80px;
+    height: 20px;
+    right: 10px;
+    bottom: 40px;
+    position: absolute;
+    font-size: 12px;
+    text-align: center;
+
+}
+
+.cards-horizontal{
+    background-color: white;
+    border-radius: 10px;
+    min-height: 20px;
+    margin: 30px;
+    padding: 30px;
+    width: 100%;
+    border-bottom: 12px solid #3E6AF8;
+}
+
+.bar-horizontal {
+    border: 5px solid #3E6AF8;
+    background-color: #3E6AF8;
+    width: 100px;
+    height: 30px;
+    right: 0px;
+    bottom: 2px;
+    margin: 30px;
+    position: absolute;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.flex-container-3 {
+    display: flex;
+    align-items: stretch;
+}
+
+.bar-line {
+    
+    background-color: lightgray;
+    width: 100%;
+    height: 1px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+/*  MEDIAQUERIES */
+
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -100px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #content {
+        width: 100%;
+    }
+    #content.active {
+        width: calc(100% - 100px);
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+
+    .notifications-bar {
+        position: relative;
+    }
+}
